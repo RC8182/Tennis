@@ -14,11 +14,10 @@ export const Testimonio = () => {
     const Users= datosTestimonio.resenias.usuarios;
 
     return (
-        <Box backgroundColor={'rgb(175, 199, 38)'}
-         color={'white'} 
-         w={'100%'}
-         minW={{base:'300px', lg:'100vw'}}
-         minH={{base:'600px', lg:'600px'}}>
+        <Flex 
+        justifyContent={'center'}
+         w={'100vw'}
+         color={'rgb(0,59,112)'} >
                 <Box margin={'5%'} >
                   <Stack spacing={0} align={'center'}>
                     <Heading>{titulo}</Heading>
@@ -72,6 +71,6 @@ export const Testimonio = () => {
                       </Flex>
                   </Flex>
                 </Box>
-              </Box>
+              </Flex>
             )
 }
