@@ -16,7 +16,7 @@ import pelota from '../../../public/pelota.png'
 import { datos } from './db';
 import Image from 'next/image';
 import { TenisContex } from '@/app/context/tenisProvider';
-import { Logo } from '../logo';
+import { Logo } from '../logo/logo';
 
 const ListHeader = ({ children }) => {
   return (

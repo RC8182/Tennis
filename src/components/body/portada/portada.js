@@ -6,7 +6,7 @@ import { datos } from './db'
 import { TenisContex } from '@/app/context/tenisProvider'
 import Image from 'next/image'
 import imgPortada from '../../../../public/bolas.png'
-import { Logo } from '@/components/logo'
+import { Logo } from '@/components/logo/logo'
 
 
 
@@ -42,7 +42,7 @@ export const Portada = () => {
                 textAlign={'center'}>
                 <Flex flexDir={'column'}>
                     <Flex 
-                    margin={'3%'}
+                    margin={'2%'}
                     className='titulo'
                     justifyContent={'center'}
                     color={'white'}
@@ -54,11 +54,8 @@ export const Portada = () => {
                     <h2>{h2}</h2>
                     </Flex>
                     <Logo/>
-                    <Flex flexDir={'column'} justifyContent={'center'} w={'90%'} margin={'auto'}>
-                        {/* <Reservar /> */}
-                    </Flex>
                     <Flex 
-                        margin={'10%'}
+                        margin={'2%'}
                         padding={'2%'}
                         className='titulo'
                         justifyContent={'center'}

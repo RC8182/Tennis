@@ -1,62 +1,56 @@
 export const datos=
 {
-    esp:{
-
-        resenias:{
-            titulo:'Reseñas',
-            subtitulo:'La palabra de nuestros clientes nos ayuda a seguir avanzando',
-            usuarios:[
-                {
-                texto:'El mejor lugar en Los Abrigos, los mejores mariscos, excelente servicio. Todo es asombroso',
-                img:'',
-                nombre:'Pete Taylor',
-                profesion:'5 reseñas'
-            },
-            {
-                texto:'Para mi el mejor restaurante de toda la isla. Deliciosa comida y servicio amable.',
-                img:'',
-                nombre:'Sebastian Krawczyk',
-                profesion:'Guia Local 140 reseñas'
-            },
-            {
-                texto:'Servicio súper bueno, económico, eficiente y amable. Las mejores croquetas que he comido!',
-                img:'',
-                nombre:'Lisa Genovese',
-                profesion:'10 reseñas'
-            },
-
-            ] 
-        },
-        
-
+    "esp": {
+      "resenias": {
+        "titulo": "Reseñas",
+        "subtitulo": "La palabra de nuestros clientes nos ayuda a seguir avanzando",
+        "usuarios": [
+          {
+            "texto": "¡La mejor escuela de tenis en Tenerife! Grandes profesionales y un ambiente inmejorable.",
+            "img": "",
+            "nombre": "María López",
+            "profesion": "Aficionada al tenis"
+          },
+          {
+            "texto": "Mi experiencia en la escuela de tenis ha sido increíble. Los entrenadores son expertos y el progreso es notable.",
+            "img": "",
+            "nombre": "Carlos Rodríguez",
+            "profesion": "Estudiante universitario"
+          },
+          {
+            "texto": "Excelente atención y dedicación hacia los alumnos. Recomiendo la escuela a todos los amantes del tenis.",
+            "img": "",
+            "nombre": "Ana Martínez",
+            "profesion": "Profesional de la salud"
+          }
+        ]
+      }
     },
-
-    ing:{
-
-        resenias:{
-            titulo:'Reviews',
-            subtitulo:'Our customers reviews',
-            usuarios:[
-                {
-                texto:'The best place in Los Abrigos, the best seafood, excellent service. everything is amazing',
-                img:'',
-                nombre:'Pete Taylor',
-                profesion:'5 reviews'
-            },
-            {
-                texto:'For me the best restaurant on the whole island. Delicious food and friendly service.',
-                img:'',
-                nombre:'Sebastian Krawczyk',
-                profesion:'Local Guide 140 reviews'
-            },
-            {
-                texto:'Super good, cheap, efficient and friendly service. The best croquettes I ve ever eaten!',
-                img:'',
-                nombre:'',
-                profesion:'10 reviews'
-            },
-
-            ] 
-        },
+    "ing": {
+      "resenias": {
+        "titulo": "Reviews",
+        "subtitulo": "Our customers' reviews",
+        "usuarios": [
+          {
+            "texto": "The best tennis school in Tenerife! Great professionals and an unbeatable atmosphere.",
+            "img": "",
+            "nombre": "Maria Lopez",
+            "profesion": "Tennis enthusiast"
+          },
+          {
+            "texto": "My experience at the tennis school has been amazing. The coaches are experts, and the progress is remarkable.",
+            "img": "",
+            "nombre": "Carlos Rodriguez",
+            "profesion": "University student"
+          },
+          {
+            "texto": "Excellent attention and dedication to students. I recommend the school to all tennis lovers.",
+            "img": "",
+            "nombre": "Ana Martinez",
+            "profesion": "Health professional"
+          }
+        ]
+      }
     }
-}
+  }
+  

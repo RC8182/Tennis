@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react'
 import Image from 'next/image'
 import React from 'react'
-import pelota from '../../public/logo.png'
+import pelota from '../../../public/logo.png'
 import './logo.css'
 export const Logo = (props) => {
     const width= props.width
@@ -19,9 +19,9 @@ export const Logo = (props) => {
       contrast: 103
     }}}>
   <Image
-    className="logo"
+    className="color"
     src={pelota}
-    alt="Pelota de tenis"
+    alt="Pista Tenis"
     width={260}
     height={37}
     priority

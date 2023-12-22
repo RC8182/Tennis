@@ -13,8 +13,9 @@ export const datos=
     ing:{
        
         portada:{
-            h2: 'Welcome to Arena Negra',
-            h1:'Arrocería restaurant in Los Abrigos'
+
+            h2: 'Dominating the Court: Your Tennis School in Tenerife South',
+            h1: 'Learn, Improve and Enjoy Tennis with Our Experienced Coaches and Personalized Programs'
 
         },
 
