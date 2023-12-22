@@ -5,8 +5,9 @@ import { Box, Flex } from '@chakra-ui/react'
 import { datos } from './db'
 import { TenisContex } from '@/app/context/tenisProvider'
 import Image from 'next/image'
-import imgPortada from '../../../../public/pelota.png'
-import chicos from '../../../../public/chicos.png'
+import imgPortada from '../../../../public/bolas.png'
+import { Logo } from '@/components/logo'
+
 
 
 export const Portada = () => {
@@ -23,7 +24,7 @@ export const Portada = () => {
         minH={{base:'600px', lg:'600px'}}
         position={'relative'}
         //backgroundImage={`url(${imgPortada[0]?.url})`}
-        backgroundImage={`url(${chicos.src})`}
+        backgroundImage={`url(${imgPortada.src})`}
         backgroundColor={'black'}
         backgroundAttachment={'fixed'}
         backgroundPosition={'center'}
@@ -52,7 +53,7 @@ export const Portada = () => {
                     >
                     <h2>{h2}</h2>
                     </Flex>
-
+                    <Logo/>
                     <Flex flexDir={'column'} justifyContent={'center'} w={'90%'} margin={'auto'}>
                         {/* <Reservar /> */}
                     </Flex>

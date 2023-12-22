@@ -16,6 +16,7 @@ import pelota from '../../../public/pelota.png'
 import { datos } from './db';
 import Image from 'next/image';
 import { TenisContex } from '@/app/context/tenisProvider';
+import { Logo } from '../logo';
 
 const ListHeader = ({ children }) => {
   return (
@@ -111,14 +112,15 @@ export default function Footer() {
             flexGrow: 1,
             ml: 8,
           }}>
-          <Image
+          {/* <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src={pelota}
           alt="Pelota de tenis"
           width={60}
           height={37}
           priority
-        />
+        /> */}
+        <Logo/>
         </Flex>
         <Text fontSize={'sm'} textAlign={'center'}>
           © 2023 Arena Negra Restaurante. All rights reserved

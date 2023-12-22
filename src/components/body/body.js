@@ -3,10 +3,10 @@ import { About } from './about/about'
 //import Galeria from './galeria/galeria'
 import { Testimonio } from './testimony/testimonio'
 import { Portada } from './portada/portada'
-import SilderImg01 from '../../../public/tabla.jpg'
-import SilderImg02 from '../../../public/tablita.jpg'
+import SilderImg01 from '../../../public/niños1.png'
+import SilderImg02 from '../../../public/pista-arena.png'
 import SilderImg03 from '../../../public/chicos.png'
-import SilderImg04 from '../../../public/vistas.jpg'
+import SilderImg04 from '../../../public/raquetas.png'
 import ProgressSlider from '../carrucel/progress-slider'
 
 export const Body = () => {

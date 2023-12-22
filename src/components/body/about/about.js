@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Stack, Text} from '@chakra-ui/react'
 import React, { useContext } from 'react'
 import { datos } from './db'
 import { TenisContex } from '@/app/context/tenisProvider'
-import imagen from '../../../../public/tablita.jpg'
+import imagen from '../../../../public/profesor.png'
 import Image from 'next/image'
 
 export const About = () => {
