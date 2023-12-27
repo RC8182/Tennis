@@ -20,8 +20,7 @@ export const About = () => {
             src={imagen}
             alt="Descripción de la imagen"
             width={500}
-            height={500}
-            objectFit="cover" // Ensure the image covers the container
+            height={'auto'}
             className="rounded-lg"
           />
 

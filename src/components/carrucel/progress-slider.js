@@ -1,12 +1,11 @@
 'use client'
-
 import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import { Transition } from '@headlessui/react'
+import { Usuarios } from '../body/testimony/usuarios'
 
 
 
-export default function ProgressSlider({ items }) {
+export default function ProgressSlider({ items, type}) {
   const duration= 5000
   const itemsRef = useRef(null)
   const frame = useRef(0)
@@ -34,20 +33,13 @@ export default function ProgressSlider({ items }) {
     }
   }
 
-  const heightFix = () => {
-    if (itemsRef.current && itemsRef.current.parentElement) itemsRef.current.parentElement.style.height = `${itemsRef.current.clientHeight}px`
-  }
-
-  useEffect(() => {
-    heightFix()
-  }, [])
 
   return (
     <div className="w-full max-w-5xl mx-auto text-center">
       {/* Item image */}
       <div className="transition-all duration-150 delay-300 ease-in-out">
         <div className="relative flex flex-col" ref={itemsRef}>
-          {items.map((item, index) => (
+          {items.map((e, index) => (
             <div
               key={index}
               className={`${
@@ -55,12 +47,11 @@ export default function ProgressSlider({ items }) {
                   ? 'transition ease-in-out duration-500 delay-200 order-first opacity-100 scale-100'
                   : 'transition ease-in-out duration-300 absolute opacity-0 scale-95'
               }`}
-              style={{ height: '100%', width: '100%' }}
-              onAnimationStart={() => {
-                if (active === index) heightFix();
-              }}
+              //style={{ height: '100%', width: '100%' }}
             >
-              <Image className="rounded-xl" src={item.img} width={1024} height={576} alt={item.desc} />
+              {(type === 'img')? <Image className="rounded-xl" src={e.img} width={1024} height={'auto'} alt={e.desc} />
+                                : <Usuarios text={e.texto} name={e.nombre} title={e.profesion}  star={e.puntuacion} />}
+
             </div>
           ))}
         </div>

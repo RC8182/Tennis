@@ -1,29 +1,12 @@
 import { Box, Flex } from '@chakra-ui/react'
 import { About } from './about/about'
-//import Galeria from './galeria/galeria'
 import { Testimonio } from './testimony/testimonio'
 import { Portada } from './portada/portada'
-import SilderImg01 from '../../../public/niños1.png'
-import SilderImg02 from '../../../public/pista-arena.png'
-import SilderImg03 from '../../../public/chicos.png'
-import SilderImg04 from '../../../public/raquetas.png'
-import ProgressSlider from '../carrucel/progress-slider'
+import { Slaider } from './slider/slaider'
+import { Entrenamientos } from './entrenamientos/entrenamientos'
 
 export const Body = () => {
-  const items = [
-    {
-      img: SilderImg01,
-    },
-    {
-      img: SilderImg02,
-    },
-    {
-      img: SilderImg03,
-    },
-    {
-      img: SilderImg04,
-    },
-  ]
+
   return (
     <Box>    
         <Flex >
@@ -31,10 +14,10 @@ export const Body = () => {
         </Flex> 
 
         <Flex marginTop={'1%'}>
-          {/* <Especialidades/> */}
+          <Entrenamientos/>
         </Flex>
-        <Flex marginTop={'1%'}>
-          <ProgressSlider items={items}/>
+        <Flex marginTop={'1%'} direction={'column'} align={'center'}>
+          <Slaider/>
         </Flex>
 
         <Flex marginTop={'1%'}>
@@ -43,10 +26,6 @@ export const Body = () => {
 
         <Flex marginTop={'1%'}>
           <About/>
-        </Flex>
-        <Flex marginTop={'1%'}
-        marginBottom={'1%'}>
-          {/* <Galeria/> */}
         </Flex>
 
     </Box>

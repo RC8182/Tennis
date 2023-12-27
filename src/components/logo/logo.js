@@ -23,7 +23,7 @@ export const Logo = (props) => {
     src={pelota}
     alt="Pista Tenis"
     width={260}
-    height={37}
+    height={'auto'}
     priority
 
   />

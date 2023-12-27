@@ -1,12 +1,11 @@
 import React from 'react'
 import { Testimonial, TestimonialAvatar, TestimonialContent, TestimonialHeading, TestimonialText } from './testimony'
-import { Box } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
+//import { FaStar } from "react-icons/fa";
+import { FaTrophy } from "react-icons/fa"; 
 
-export const Usuarios = (props) => {
-    const text= props.text;
-    const name= props.name;
-    const title= props.title;
-    const avatar= props.avatar;
+export const Usuarios = ({text, name, title, avatar, star}) => {
+
   return (
     <Box backgroundColor={'rgb(175, 199, 38)'}
         borderRadius={'15px'}
@@ -20,12 +19,20 @@ export const Usuarios = (props) => {
           </TestimonialText>
         </TestimonialContent>
         <TestimonialAvatar
-          src={
-            {avatar}
-          }
+          // src={
+          //   {avatar}
+          // }
           name={name}
           title={title}
         />
+        <Flex padding={'5px'} justifyContent={'center'} gap={2}>
+          {Array.from({ length: star }, (_, i) => (
+            <Flex key={i} >
+              <FaTrophy color='blue' />
+            </Flex>
+          ))}
+        </Flex>
+
       </Testimonial>
     </Box>
   )
